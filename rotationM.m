@@ -12,7 +12,6 @@ delta_t=0.05;
 for i=1:20  %irun for 20 times     
     R_dot=R*omega_hat;
     R=R+R_dot*delta_t;   
-    [U,S,V] = svd(R);
-    R=U*V'
-
+    [U,S,V] = svd(R); %Find the SVD of R 
+    R=U*V';            %Use U and V to reconsstruct the R belong to SO(3)
 end
