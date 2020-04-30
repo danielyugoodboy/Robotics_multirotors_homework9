@@ -20,3 +20,6 @@ output(3*1):3*1 vector
 
 param.m
 declare all parameter of the quadrotor and initial condition
+
+rotationM.m
+Solve the problem that R may not belong to SO(3) after we integrated R_dot.
