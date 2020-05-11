@@ -5,7 +5,7 @@ function out = trajectory(u,P)
 
 t = u(end);
 b1d = [1 0 0];
-xd = [0.4*t 0.4*sin(0.2*pi*t) 0.6*cos(0.2*pi*t)];
+xd = [0.0 0.0 2.0];
 
 out = [xd b1d];
 end
